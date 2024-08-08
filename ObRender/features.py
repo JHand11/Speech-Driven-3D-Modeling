@@ -17,7 +17,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print("preprocessing model")
 model, preprocess = clip.load("ViT-B/32", device=device)
 model.eval()  # Set the model to evaluation mode
-print("model evaluated")
+print("model evaluated!")
 
 class ImageDataset(Dataset):
     def __init__(self, views_directory):
